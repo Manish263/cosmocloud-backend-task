@@ -8,7 +8,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/student-management-api.git
+   git clone https://github.com/Manish263/cosmocloud-backend-task.git
    cd student-management-api
 
 2. **Set up the environment:**
@@ -118,8 +118,8 @@ To run this project locally, follow these steps:
 - **Response:** `200 Ok`
 
 ## Live Website
--**Check out the live demo of this API at https://student-api-management.onrender.com/.**
+-**Check out the live demo of this API at https://cosmocloud-backend-task.onrender.com/.**
 
 ## Access the API:
 *Access the API:
-Open your web browser and go to **https://student-api-management.onrender.com/**  to access the Swagger documentation and explore the available endpoints.*
+Open your web browser and go to **https://cosmocloud-backend-task.onrender.com/**  to access the Swagger documentation and explore the available endpoints.*
