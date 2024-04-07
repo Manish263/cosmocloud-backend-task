@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "d21a5e4b-9f6e-4f52-aa5d-00525bbc875a",
+		"name": "Library-Management-API-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16498892"
+	},
+	"item": [
+		{
+			"name": "postStudents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"Devesh Udhlani\",\r\n  \"age\":23,\r\n  \"address\":{\r\n    \"city\":\"Khandwa\",\r\n    \"country\":\"India\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://student-api-management.onrender.com/students",
+					"protocol": "https",
+					"host": [
+						"student-api-management",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All students",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://student-api-management.onrender.com/students",
+					"protocol": "https",
+					"host": [
+						"student-api-management",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getting students with parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://student-api-management.onrender.com/students?country=India&age=22",
+					"protocol": "https",
+					"host": [
+						"student-api-management",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"students"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "India",
+							"description": "return all records which has country as India"
+						},
+						{
+							"key": "age",
+							"value": "22",
+							"description": "return all records with age greater than or equal to 22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "with partial params",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://student-api-management.onrender.com/students?age=24",
+					"protocol": "https",
+					"host": [
+						"student-api-management",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"students"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "24",
+							"description": "return all records with age 24 or greater"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getting particular record using ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://student-api-management.onrender.com/students/661179c20ecb81895c1dfd76",
+					"protocol": "https",
+					"host": [
+						"student-api-management",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"students",
+						"661179c20ecb81895c1dfd76"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updating a record using ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Devesh Udhlani\",\r\n    \"age\": 25,\r\n    \"address\": {\r\n        \"city\": \"Melbroune\",\r\n        \"country\": \"Australia\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://student-api-management.onrender.com/students/661179c20ecb81895c1dfd76",
+					"protocol": "https",
+					"host": [
+						"student-api-management",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"students",
+						"661179c20ecb81895c1dfd76"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting user by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://student-api-management.onrender.com/students/661179c20ecb81895c1dfd76",
+					"protocol": "https",
+					"host": [
+						"student-api-management",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"students",
+						"661179c20ecb81895c1dfd76"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
